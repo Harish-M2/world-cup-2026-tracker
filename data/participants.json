@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Amar",
+    "teams": ["Qatar", "Algeria", "Turkey", "United States", "Argentina"]
+  },
+  {
+    "name": "Harish",
+    "teams": ["Panama", "Australia", "Canada", "Croatia", "Netherlands"]
+  },
+  {
+    "name": "Vik",
+    "teams": ["Cape Verde", "Czech Republic", "Sweden", "Colombia", "Germany"]
+  },
+  {
+    "name": "Nic",
+    "teams": ["Republic of the Congo", "Bosnia and Herzegovina", "Scotland", "Japan", "Spain"]
+  },
+  {
+    "name": "George",
+    "teams": ["Uzbekistan", "Ghana", "Senegal", "Uruguay", "Belgium"]
+  },
+  {
+    "name": "Ashkan",
+    "teams": ["Saudi Arabia", "Iran", "Austria", "Mexico", "Brazil"]
+  },
+  {
+    "name": "Tadas",
+    "teams": ["Iraq", "Egypt", "Paraguay", "Switzerland", "Portugal"]
+  },
+  {
+    "name": "Calum",
+    "teams": ["New Zealand", "Tunisia", "Ivory Coast", "Norway", "France"]
+  },
+  {
+    "name": "Sandeep",
+    "teams": ["South Africa", "South Korea", "Ecuador", "Morocco", "England"]
+  }
+]

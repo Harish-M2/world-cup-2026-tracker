@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Cup 2026 Sweepstake Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="texture"></div>
+    <div class="flares" aria-hidden="true"></div>
+    <main class="shell">
+      <header class="hero">
+        <h1>World Cup 2026 Sweepstake</h1>
+        <p class="hero-subtitle">Live leaderboard and team allocations</p>
+        <div class="hero-visual" aria-hidden="true">
+          <span class="hero-ribbon hero-ribbon-left"></span>
+          <img
+            class="hero-logo"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/1/17/2026_FIFA_World_Cup_emblem.svg/250px-2026_FIFA_World_Cup_emblem.svg.png"
+            alt="Official FIFA World Cup 2026 emblem"
+          />
+          <span class="hero-ribbon hero-ribbon-right"></span>
+        </div>
+        <div class="hero-broadcast" aria-hidden="true">
+          <span class="broadcast-chip">LIVE</span>
+          <span class="broadcast-chip broadcast-chip-gold">WORLD CUP</span>
+          <span class="broadcast-chip">SCOREBOARD</span>
+        </div>
+      </header>
+
+      <section class="ticker card">
+        <div class="ticker-label">Live Ticker</div>
+        <div class="ticker-viewport">
+          <div id="tickerTrack" class="ticker-track"></div>
+        </div>
+      </section>
+
+      <section class="stats-strip">
+        <article class="stat-card card">
+          <p class="stat-label">Players</p>
+          <p id="statPlayers" class="stat-value">0</p>
+        </article>
+        <article class="stat-card card">
+          <p class="stat-label">Assigned Teams</p>
+          <p id="statTeams" class="stat-value">0</p>
+        </article>
+        <article class="stat-card card">
+          <p class="stat-label">Matches Counted</p>
+          <p id="statMatches" class="stat-value">0</p>
+        </article>
+      </section>
+
+      <section class="rules card">
+        <h2>Rules</h2>
+        <p>Each assigned team earns 3 points for a win, 2 points for a draw, and 0 points for a loss.</p>
+        <p>Each player's score is the sum of points from their five teams.</p>
+      </section>
+
+      <section class="status card">
+        <div>
+          <strong>Last updated:</strong>
+          <span id="lastUpdated">Loading...</span>
+        </div>
+        <button id="refreshBtn" type="button">Refresh now</button>
+      </section>
+
+      <section class="leaderboard card">
+        <h2>Leaderboard</h2>
+        <div id="podium" class="podium-grid"></div>
+        <p class="pack-title">Chasing Pack</p>
+        <ol id="leaderboardList"></ol>
+      </section>
+
+      <section class="allocations card">
+        <h2>Team Allocations</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Team 1</th>
+                <th>Team 2</th>
+                <th>Team 3</th>
+                <th>Team 4</th>
+                <th>Team 5</th>
+                <th>Record</th>
+                <th>Pts</th>
+              </tr>
+            </thead>
+            <tbody id="allocationsBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="all-matches card">
+        <h2>All Matches</h2>
+        <div class="pagination-controls">
+          <button id="prevPageBtn" type="button" disabled>← Previous</button>
+          <span id="pageInfo" class="page-info">Page 1 of 1</span>
+          <button id="nextPageBtn" type="button" disabled>Next →</button>
+        </div>
+        <ul id="allMatchesList" class="matches-list"></ul>
+        <div class="pagination-controls">
+          <button id="prevPageBtnBottom" type="button" disabled>← Previous</button>
+          <span id="pageInfoBottom" class="page-info">Page 1 of 1</span>
+          <button id="nextPageBtnBottom" type="button" disabled>Next →</button>
+        </div>
+      </section>
+
+      <p id="warning" class="warning"></p>
+    </main>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
