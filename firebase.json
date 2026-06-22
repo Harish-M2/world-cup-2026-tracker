@@ -4,7 +4,7 @@
     "runtime": "nodejs22"
   },
   "hosting": {
-    "site": "world-cup-2026-tracker",
+    "site": "world-cup-2026-tracker-133353",
     "public": "public",
     "ignore": [
       "firebase.json",
